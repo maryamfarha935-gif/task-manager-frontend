@@ -3,8 +3,7 @@ import './App.css';
 import Login from './Login';
 import Register from './Register';
 
-const API_URL = "http://localhost:8080/api/tasks";
-
+const API_URL = "https://task-manager-backend-production-3640.up.railway.app/api/tasks";
 function App() {
   const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState("");

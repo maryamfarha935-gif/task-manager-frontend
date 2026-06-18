@@ -7,7 +7,7 @@ function Register({ goToLogin }) {
   const [message, setMessage] = useState("");
 
   const handleRegister = () => {
-    fetch("http://localhost:8080/api/auth/register", {
+    fetch("https://task-manager-backend-production-3640.up.railway.app/api/auth/register", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, email, password })

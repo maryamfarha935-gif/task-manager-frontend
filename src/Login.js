@@ -6,7 +6,7 @@ function Login({ onLogin, goToRegister }) {
   const [message, setMessage] = useState("");
 
   const handleLogin = () => {
-    fetch("http://localhost:8080/api/auth/login", {
+    fetch("https://task-manager-backend-production-3640.up.railway.app/api/auth/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, password })
