@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.container {
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px;
+  width: 500px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #3498db;
+}
+
+.add-btn {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #2980b9;
+}
+
+ul {
+  list-style: none;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.task-text {
+  font-size: 15px;
+  color: #2c3e50;
+  cursor: pointer;
+}
+
+.task-text.done {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.delete-btn {
+  padding: 6px 12px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+.priority-high {
+  border-left: 4px solid #e74c3c;
+}
+
+.priority-medium {
+  border-left: 4px solid #f39c12;
+}
+
+.priority-low {
+  border-left: 4px solid #2ecc71;
+}
+
+.priority-badge {
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 10px;
+  color: white;
+  margin-left: 10px;
+}
+
+.badge-high {
+  background-color: #e74c3c;
+}
+
+.badge-medium {
+  background-color: #f39c12;
+}
+
+.badge-low {
+  background-color: #2ecc71;
+}
+
+select {
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  cursor: pointer;
+}
+
+.task-left {
+  display: flex;
+  align-items: center;
+}
