@@ -6,7 +6,7 @@ function Login({ onLogin, goToRegister }) {
   const [message, setMessage] = useState("");
 
   const handleLogin = () => {
-    fetch("https://task-manager-backend-production-3640.up.railway.app/api/auth/login", {
+    fetch("https://task-manager-backend-vwgq.onrender.com/api/auth/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, password })
